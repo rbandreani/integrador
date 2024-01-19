@@ -61,5 +61,72 @@ git commit -m "Nuevo cambio en la rama navbar"
 # abrimos la consola dentro de la carpeta del repositorio local
 git remote add origin https://github.com/usuario/repositorio
 git branch -M main
+git add index.html
+git commit -m "agrego el html"
 git push -u origin main
+```
+
+## Cuarta Parte
+1. Hacer Fork de https://github.com/nestjs/nest en tu cuenta.
+```sh
+# primero abrimos el repositorio
+# le damos click a fork y configuiramos
+```
+
+2. Clonar el repositorio en un cambio local. 
+```sh
+# abrimos la consola donde tengamos los repositorios locales
+git clone https://github.com/usuario/nest
+# este nos crea primero la carpeta "nest" y luego los elementos correspondientes al repositorio
+```
+
+3. Realizar un cambio en dicho repositorio. 
+```sh
+# borramos las carpetas sample y scritps
+```
+
+4. Registrar el commit.
+```sh
+# entro a la carpeta de nest
+git init 
+git remote add nest git@github.com:roquitoit/nest.git
+git branch -M main
+git commit -m "borro las carpetas sample y scripts"
+```
+
+5. Hacer push a los cambios en dicho repositorio
+```sh
+git push -u nest main
+# en github figurara "main had recent pushes time ago
+```
+
+## Quinta Parte
+1. Clonar el repositorio local de NestJS.
+```sh
+# vuelvo a la rama master para tener todo como antes
+git checkout master
+# evito clonar el repositorio local
+git clone C:/....
+```
+
+
+2. Buscar en todo el repositorio todas las ocurrencias del decorador "Get".
+```sh
+git grep -r '@\Get' 
+```
+
+3. Buscar en todo el repositorio todas las ocurrencias del decorador "Post".
+```sh
+git grep -r '@\Post' 
+```
+
+
+4. Buscar en todo el repositorio todas las ocurrencias del decorador "Put".
+```sh
+git grep -r '@\Put' 
+```
+
+5. Buscar en todo el repositorio todas las ocurrencias del decorador "Delete"
+```sh
+git grep -r '@\Delete' 
 ```
