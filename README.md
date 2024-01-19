@@ -37,18 +37,29 @@ git checkout -b navbar #creo la rama navbar
 
 3. Registrar el commit en el nuevo branch
 ```sh
-git add REAMDE.md #cargo de nuevo el README.md
+git add . #cargo todos aunque solo teengo el README.md
 git commit -m "Nuevo cambio en la rama navbar"
 ```
 
+## Tercera Parte
+1. Crear una cuenta en GitHub.
+```sh
+# creo una cuenta manualmente en GitHub
+```
 
+2. Crear un repositorio apto para GitHub Pages (usuario/usuario.github.io).
+```sh
+# creo un repositorio
+# en settings del repositorio, voy a pages
+# selecciono la rama y le doy a guardar
+# esperar que GitHub cree la pagina
+```
 
-
-
-
-Agrego el repositorio a GitHub
-- git remote add origin https://github.com/roquitoit/test.git
-- git push -u origin master
-
-Si esto no funciona lo hacemos desde SSH
-
+3. Subir un documento .html a dicho repositorio con tu nombre.
+```sh
+# primero debemos conectar el repositorio remoto mediante HTTPS, sino podemos usar SSH
+# abrimos la consola dentro de la carpeta del repositorio local
+git remote add origin https://github.com/usuario/repositorio
+git branch -M main
+git push -u origin main
+```
